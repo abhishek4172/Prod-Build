@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjana Events</title>
+    <link rel="stylesheet" href="/build/css/style.css">
+</head>
+<body>
+
+     <!--Hero Section with Functionality-->
+     <section class="relative h-screen flex flex-col items-center justify-center text-center text-white ">
+        <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+            <video class="min-w-full min-h-full absolute object-cover"
+                src="assets/HERO.mp4"
+                type="video/mp4" autoplay muted loop></video>
+        </div>
+        <div class="video-content space-y-2 z-10">
+            <h1 class="font-light font-bold text-6xl">VTU Kalaburagi Techno Fest</h1>
+            <h3 class="font-light text-3xl">Coming Soon</h3>
+            <h4 class="font-light text-2xl">Stay Tuned for Updates</h4>
+        </div>
+    </section>
+
+    <!--Hero Section functionality-->
+    <style>
+        .video-docker video {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .video-docker::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+    </style>
+
+    <!--SPace Line-->
+    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+    <!--Space Line-->
+
+    
+</body>
+</html>
