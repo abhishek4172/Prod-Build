@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="/build/css/style.css">
+</head>
+<body>
+
+     <!--Hero Section with Functionality-->
+     <section class="relative h-screen flex flex-col items-center justify-center text-center text-white ">
+        <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+            <video class="min-w-full min-h-full absolute object-cover"
+                src="assets/HERO.mp4"
+                type="video/mp4" autoplay muted loop></video>
+        </div>
+        <div class="video-content space-y-2 z-10">
+            <h1 class="font-light font-bold text-6xl">VTU Kalaburagi Techno Fest</h1>
+            <h3 class="font-light text-3xl">Coming Soon</h3>
+            <h4 class="font-light text-2xl">Stay Tuned for Updates</h4>
+        </div>
+    </section>
+
+    <!--Hero Section functionality-->
+    <style>
+        .video-docker video {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .video-docker::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+    </style>
+
+    <!--SPace Line-->
+    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+    <!--Space Line-->
+
+    <!--Team-->
+    <div class="bg-white py-24 sm:py-32">
+        <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+          <div class="max-w-2xl">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
+            <p class="mt-6 text-lg leading-8 text-gray-600">Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper suspendisse.</p>
+          </div>
+          <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                <div>
+                  <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Alexander</h3>
+                  <p class="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
+                </div>
+              </div>
+            </li>
+      
+            <!-- More people... -->
+          </ul>
+        </div>
+      </div>
+      
+
+    
+</body>
+</html>
